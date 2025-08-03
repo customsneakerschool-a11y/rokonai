@@ -36,7 +36,7 @@ This package contains the complete **Rokon AI** application - a modern, professi
    - Go to [netlify.com](https://netlify.com)
    - Import your GitHub repository
    - Set build command: `npm run build`
-   - Set publish directory: `build/client`
+   - Set publish directory: `dist/client`
    - Deploy!
 
 ### Option 3: Deploy to Cloudflare Pages
@@ -47,7 +47,7 @@ This package contains the complete **Rokon AI** application - a modern, professi
    - Go to [pages.cloudflare.com](https://pages.cloudflare.com)
    - Import your GitHub repository
    - Set build command: `npm run build`
-   - Set build output directory: `build/client`
+   - Set build output directory: `dist/client`
    - Deploy!
 
 ## 🔧 Environment Variables

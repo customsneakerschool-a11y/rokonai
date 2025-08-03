@@ -3,7 +3,7 @@
   "description": "Rokon AI - Free LLM-Powered Coding Assistant with Membership System",
   "private": true,
   "license": "MIT",
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "npm@10.9.2",
   "sideEffects": false,
   "type": "module",
   "scripts": {
@@ -14,13 +14,14 @@
     "test:watch": "vitest",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "start": "bindings=$(./bindings.sh) && wrangler pages dev ./build/client $bindings",
+    "start": "bindings=$(./bindings.sh) && wrangler pages dev ./dist/client $bindings",
     "typecheck": "tsc",
     "typegen": "wrangler types",
     "preview": "pnpm run build && pnpm run start"
   },
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=18.18.0",
+    "npm": ">=10.0.0"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
@@ -51,7 +52,7 @@
     "@remix-run/react": "^2.10.2",
     "@uiw/codemirror-theme-vscode": "^4.23.0",
     "@unocss/reset": "^0.61.0",
-    "@webcontainer/api": "1.3.0-internal.10",
+    "@webcontainer/api": "^1.3.0",
     "@xterm/addon-fit": "^0.10.0",
     "@xterm/addon-web-links": "^0.11.0",
     "@xterm/xterm": "^5.5.0",
